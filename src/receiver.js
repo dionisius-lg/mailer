@@ -104,7 +104,7 @@ async function processEmail(client, account) {
         let messageCount = 0;
         let sequences = [];
 
-        for await (let email of client.fetch({ seen: false, since: new Date('2024-12-23') }, { source: true })) {
+        for await (let email of client.fetch({ seen: false, since: new Date('2025-01-14') }, { source: true })) {
             if (messageCount >= email_inbox_fetch_limit) {
                 continue;
             }
